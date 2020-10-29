@@ -1,7 +1,37 @@
 // Import stylesheets
 import "./styles.css";
+import { init, SearchEmbed } from "./tsembed";
 
 // Write Javascript code!
-const appDiv = document.getElementById("app");
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+init({
+  thoughtSpotHost: "https://172.18.92.4:8443/v2",
+  authType: "SSO"
+});
+const tsSearch = new SearchEmbed("#embed", {
+  frameParams: {
+    width: 1280,
+    height: 720
+  }
+});
+console.log(tsSearch.getId());
+tsSearch
+  .on("init", showLoader)
+  .on("load", hideLoader)
+  .render()
+  .on("answerPageLoading", (payload) =>
+    window.alert(
+      "message received from embedded view" + JSON.stringify(payload)
+    )
+  );
+document.getElementById("message").addEventListener("click", () => {
+  tsSearch.trigger("update", { data: "Hello from parent" });
+});
+
+
+function showLoader() {
+  document.getElementById("loader").style.display = "block";
+}
+function hideLoader() {
+  document.getElementById("loader").style.display = "none";
+}
 

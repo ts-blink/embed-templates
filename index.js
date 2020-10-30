@@ -1,6 +1,6 @@
 // Import stylesheets
 import "./styles.css";
-import { init, SearchEmbed } from "./tsembed";
+import { init, SearchEmbed } from "ts-embed-sdk";
 
 // Write Javascript code!
 init({
@@ -9,8 +9,8 @@ init({
 });
 const tsSearch = new SearchEmbed("#embed", {
   frameParams: {
-    width: 1280,
-    height: 720
+    width: 800,
+    height: 500
   }
 });
 console.log(tsSearch.getId());
@@ -19,7 +19,7 @@ tsSearch
   .on("load", hideLoader)
   .render()
   .on("answerPageLoading", (payload) =>
-    window.alert(
+    console.log(
       "message received from embedded view" + JSON.stringify(payload)
     )
   );

@@ -1,10 +1,10 @@
-// Import stylesheets
+// Import packages
 import "./styles.css";
 import { init, SearchEmbed } from "ts-embed-sdk";
 
 // Write Javascript code!
 init({
-  thoughtSpotHost: "https://172.18.92.4:8443/v2",
+  thoughtSpotHost: "$$HOST_URL/v2",
   authType: "SSO"
 });
 const tsSearch = new SearchEmbed("#embed", {

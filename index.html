@@ -6,19 +6,10 @@
       <div class="menu-item">About</div>
       <div class="menu-item">Services</div>
       <div class="menu-item">Solutions</div>
+      <button id="openSearch">Simply Ask</button>
     </div>
   </div>
   <div class="contents">
-    <div class="search-container">
-      <div class="search-title">
-        <span>Search:<span>
-            <button class="show-message" id="message">Show Alert</button>
-      </div>
-      <div class="search-embed">
-        <div id="loader" class="loader"></div>
-        <div id="embed"></div>
-      </div>
-    </div>
     <div class="content-block">
       <div class="left">
         <h2>Advanced Analytics</h2>
@@ -43,6 +34,19 @@
           <li>Thought leadership and industry insights</li>
           <li>Program strategy development</li>
         </ul>
+      </div>
+    </div>
+
+    <div class="popover">
+      <div class="popover-background"></div>
+      <div class="popover-content">
+        <div class="popover-header">
+          <div class="title">Search</div>
+          <div class="close-btn"></div>
+        </div>
+        <div class="popover-body">
+          <div id="loader" style="display: none;" class="loader"></div>
+        </div>
       </div>
     </div>
   </div>

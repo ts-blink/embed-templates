@@ -7,23 +7,21 @@ init({
   thoughtSpotHost: "https://172.18.92.4:8443/v2",
   authType: "SSO"
 });
-const tsSearch = new SearchEmbed("#embed", {
-  frameParams: {}
-});
-console.log(tsSearch.getId());
-tsSearch
-  .on("init", showLoader)
-  .on("load", hideLoader)
-  .render()
-  .on("answerPageLoading", (payload) =>
-    console.log(
-      "message received from embedded view" + JSON.stringify(payload)
-    )
-  );
-document.getElementById("message").addEventListener("click", () => {
-  tsSearch.trigger("update", { data: "Hello from parent" });
+
+document.getElementById("openSearch").addEventListener("click", () => {
+  let tsSearch = new SearchEmbed(".popover .popover-body", {
+    frameParams: {}
+  });
+  tsSearch.on("init", showLoader).on("load", hideLoader).render();
+  document.querySelector(".popover").classList.add("open");
 });
 
+document
+  .querySelector(".popover .popover-header .close-btn")
+  .addEventListener("click", () => {
+    document.querySelector(".popover").classList.remove("open");
+    document.querySelector(".popover .popover-body iframe").remove();
+  });
 
 function showLoader() {
   document.getElementById("loader").style.display = "block";

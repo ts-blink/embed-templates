@@ -4,14 +4,11 @@ import { init, SearchEmbed } from "ts-embed-sdk";
 
 // Write Javascript code!
 init({
-  thoughtSpotHost: "$$HOST_URL/v2",
+  thoughtSpotHost: "https://172.18.92.4:8443/v2",
   authType: "SSO"
 });
 const tsSearch = new SearchEmbed("#embed", {
-  frameParams: {
-    width: 800,
-    height: 500
-  }
+  frameParams: {}
 });
 console.log(tsSearch.getId());
 tsSearch
@@ -34,4 +31,3 @@ function showLoader() {
 function hideLoader() {
   document.getElementById("loader").style.display = "none";
 }
-

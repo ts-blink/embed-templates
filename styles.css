@@ -1,10 +1,114 @@
-.contents {
-  margin: 6px;
+body {
+  margin: 0;
 }
 
-h1 {
-  font-family: sans-serif;
+.wrapper {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+.header {
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  display: flex;
+  padding: 20px;
+  font-size: 16px;
+  background: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.22);
+  z-index: 10;
+}
+
+.header .logo {
+  font-weight: bold;
+  color: #0171ce;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.header .menu-bar {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .menu-bar .menu-item {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.header .menu-bar .menu-item:hover {
+  color: #3378bb
+}
+
+.search-container {
+  padding: 20px;
+  color: #4a4a4d;
+  position: relative;
+}
+
+.search-container .search-title {
+  margin-bottom: 20px;
+}
+
+.search-container .search-title span {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.search-container .search-title .show-message {
+  position: absolute;
+  right: 20px;
+  border: none;
+  height: 32px;
+  min-width: 24px;
+  border-radius: 3px;
+  text-shadow: none;
+  line-height: 32px;
+  padding: 0 10px;
+  color: #fff;
+  background: #3378bb;
+  cursor: pointer;
+  outline: 0;
+}
+
+.search-container .search-title .show-message:hover {
+  background-color: #4293e2;
+}
+
+.search-container .search-embed {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.search-container .search-embed #embed,
+.search-container .search-embed iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.search-container .search-embed .loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-block {
+  padding: 20px;
+  color: #4a4a4d;
+}
+
+.content-block:nth-of-type(even) {
+  background: #f1f3f3;
+}
+
+.content-block h2 {
+  font-size: 28px;
+}
+
 
 .loader,
 .loader:before,
@@ -16,7 +120,7 @@ h1 {
   color: #2980b9;
   font-size: 11px;
   text-indent: -99999em;
-  margin: 55px auto;
+  margin: auto;
   position: relative;
   width: 10em;
   height: 10em;
@@ -24,6 +128,7 @@ h1 {
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
+  transform-origin: center;
 }
 
 .loader:before,
@@ -81,4 +186,3 @@ h1 {
     transform: rotate(360deg);
   }
 }
-

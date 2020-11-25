@@ -1,27 +1,24 @@
 // Import packages
 import "./styles.css";
-import { init, SearchEmbed } from "ts-embed-sdk";
+import { init, PinboardEmbed } from "ts-embed-sdk";
 
 // Write Javascript code!
 init({
   thoughtSpotHost:
-    /*param-start-hosturl*/ "https://172.18.92.4:8443/v2" /*param-end-hosturl*/,
+    /*param-start-hosturl*/ "https://172.18.92.4:8443" /*param-end-hosturl*/,
   authType: "SSO"
 });
-const tsSearch = new SearchEmbed("#embed", {
-  frameParams: {}
+
+const embed = new PinboardEmbed("#embed", {
+  frameParams: {
+    width: 1280,
+    height: 720
+  }
 });
-console.log(tsSearch.getId());
-tsSearch
+embed
   .on("init", showLoader)
   .on("load", hideLoader)
-  .on("answerPageLoading", payload =>
-    console.log("message received from embedded view" + JSON.stringify(payload))
-  )
-  .render(["8dada323-5956-4e2d-ae12-81bfc78b2ea5"]); // data source;
-document.getElementById("message").addEventListener("click", () => {
-  tsSearch.trigger("update", { data: "Hello from parent" });
-});
+  .render("21329019-3cb1-475e-b159-56b875150c61");
 
 function showLoader() {
   document.getElementById("loader").style.display = "block";

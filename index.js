@@ -12,6 +12,7 @@ document.getElementById("openSearch").addEventListener("click", () => {
   let tsSearch = new SearchEmbed(".popover .popover-body", {
     frameParams: {}
   });
+  showLoader();
   tsSearch.on("init", showLoader).on("load", hideLoader).render();
   document.querySelector(".popover").classList.add("open");
 });

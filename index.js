@@ -5,7 +5,7 @@ import { init, SearchEmbed } from "ts-embed-sdk";
 // Write Javascript code!
 init({
   thoughtSpotHost:
-    /*param-start-hosturl*/ "https://172.18.92.4:8443/v2" /*param-end-hosturl*/,
+    /*param-start-hosturl*/ "https://172.18.92.4:8443" /*param-end-hosturl*/,
   authType: "SSO"
 });
 const tsSearch = new SearchEmbed("#embed", {

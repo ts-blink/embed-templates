@@ -24,7 +24,7 @@ embed
   // Render a viz within a pinboard
   .render(
     "2f64357c-d750-43a7-8a14-8d6f9c885efe",
-    "3454ebf1-a5f2-437d-87d0-07c47eaef5b3"
+    "e6fcc368-bb05-46f7-8271-a0714f5e1fe5"
   );
 
 // Functions to show/hide a loader while the iframe loads

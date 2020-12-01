@@ -103,6 +103,7 @@ body {
   background: #3378bb;
   cursor: pointer;
   outline: 0;
+  display: none;
 }
 
 .search-container .search-title .show-message:hover {
@@ -128,6 +129,15 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.search-container .data-source-selector {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+
+.search-container .data-source-selector select {
+    margin-left: 5px;
+}
 .content-block {
   padding: 20px;
   color: #4a4a4d;

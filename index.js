@@ -1,25 +1,30 @@
-// Import packages
-import "./styles.css";
+// Import ThoughtSpot SDK
 import { init, PinboardEmbed } from "ts-embed-sdk";
+import "./styles.css";
 
-// Write Javascript code!
+// Initialize embed configuration
 init({
   thoughtSpotHost:
     /*param-start-hosturl*/ "https://172.18.92.4:8443" /*param-end-hosturl*/,
   authType: "SSO"
 });
 
+// Instantiate class for embedding a pinboard
 const embed = new PinboardEmbed("#embed", {
   frameParams: {
     width: 1280,
     height: 720
   }
 });
+
 embed
+  // Register event listeners
   .on("init", showLoader)
   .on("load", hideLoader)
-  .render("21329019-3cb1-475e-b159-56b875150c61");
+  // Render pinboard with UUID
+  .render("2f64357c-d750-43a7-8a14-8d6f9c885efe");
 
+// Functions to show and hide a loader while iframe loads
 function showLoader() {
   document.getElementById("loader").style.display = "block";
 }

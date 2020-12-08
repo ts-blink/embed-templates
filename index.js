@@ -14,7 +14,7 @@ const tsSearch = new SearchEmbed("#embed", {
   frameParams: {},
   // Configure theme colours
   theme: {
-    backgroundColor: '#C6E3CF'
+    backgroundColor: 'rgba(41, 181, 232, 0.46)'
   }
 });
 

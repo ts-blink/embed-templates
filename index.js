@@ -26,7 +26,9 @@ tsSearch
     console.log("message received from embedded view" + JSON.stringify(payload))
   )
   // Render the embedded search and pass in the data source id
-  .render(["f0343afe-9ed1-4c14-95ab-d3fe98c79aa6"]);
+  .render([
+      /*param-start-datasource*/ "18e9963c-1718-4670-af2c-d507cb82f0f8" /*param-end-datasource*/
+  ]);
 
 // On selecting a data source, trigger an event to ThoughtSpot
 // to change the search data source

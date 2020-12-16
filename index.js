@@ -22,7 +22,7 @@ embed
   .on("init", showLoader)
   .on("load", hideLoader)
   // Render pinboard with UUID
-  .render("2f64357c-d750-43a7-8a14-8d6f9c885efe");
+  .render("0dfc3e9a-f4ac-4a24-a9e1-4e901961173a");
 
 // Functions to show and hide a loader while iframe loads
 function showLoader() {

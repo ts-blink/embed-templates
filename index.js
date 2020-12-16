@@ -23,8 +23,8 @@ embed
   .on("load", hideLoader)
   // Render a viz within a pinboard
   .render(
-    "2f64357c-d750-43a7-8a14-8d6f9c885efe",
-    "e6fcc368-bb05-46f7-8271-a0714f5e1fe5"
+    "0dfc3e9a-f4ac-4a24-a9e1-4e901961173a",
+    "a07cea4d-d3b4-4011-aafe-37602f4c1583"
   );
 
 // Functions to show/hide a loader while the iframe loads

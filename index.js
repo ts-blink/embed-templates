@@ -5,7 +5,7 @@ import "./styles.css";
 // Initialize embed configuration
 init({
   thoughtSpotHost:
-    /*param-start-hosturl*/"https://172.18.92.4:8443"/*param-end-hosturl*/,
+    /*param-start-hosturl*/"https://10.87.90.166"/*param-end-hosturl*/,
   authType: "SSO"
 });
 
@@ -23,8 +23,8 @@ embed
   .on("load", hideLoader)
   // Render a viz within a pinboard
   .render(
-    "0dfc3e9a-f4ac-4a24-a9e1-4e901961173a",
-    "a07cea4d-d3b4-4011-aafe-37602f4c1583"
+    /*param-start-pinboardId*/"976bb48e-b1e0-4621-a7da-51161cef4b29"/*param-end-pinboardId*/,
+    /*param-start-answerId*/"b53ed4b9-7a95-4a16-9f6b-1c7f53d9777f"/*param-end-answerId*/
   );
 
 // Functions to show/hide a loader while the iframe loads

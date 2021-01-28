@@ -5,7 +5,7 @@ import "./styles.css";
 // Initialize embed configuration
 init({
   thoughtSpotHost:
-    /*param-start-hosturl*/ "https://172.18.92.4:8443" /*param-end-hosturl*/,
+    /*param-start-hosturl*/ "https://10.87.90.166" /*param-end-hosturl*/,
   authType: "SSO"
 });
 
@@ -22,7 +22,7 @@ embed
   .on("init", showLoader)
   .on("load", hideLoader)
   // Render pinboard with UUID
-  .render("0dfc3e9a-f4ac-4a24-a9e1-4e901961173a");
+  .render(/*param-start-pinboardId*/"976bb48e-b1e0-4621-a7da-51161cef4b29"/*param-end-pinboardId*/);
 
 // Functions to show and hide a loader while iframe loads
 function showLoader() {

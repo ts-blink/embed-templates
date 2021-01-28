@@ -5,7 +5,7 @@ import { init, SearchEmbed } from "ts-embed-sdk";
 // Write Javascript code!
 init({
   thoughtSpotHost:
-    /*param-start-hosturl*/ "https://172.18.92.4:8443" /*param-end-hosturl*/,
+    /*param-start-hosturl*/ "https://10.87.90.166" /*param-end-hosturl*/,
   authType: "SSO"
 });
 
@@ -27,16 +27,8 @@ tsSearch
   )
   // Render the embedded search and pass in the data source id
   .render([
-      /*param-start-datasource*/ "18e9963c-1718-4670-af2c-d507cb82f0f8" /*param-end-datasource*/
+      /*param-start-datasource*/ "5b6cbcc7-8e7e-4028-82a8-556bdac5ab66" /*param-end-datasource*/
   ]);
-
-// On selecting a data source, trigger an event to ThoughtSpot
-// to change the search data source
-document.getElementById("data-source")
-  .addEventListener("change", (e) => {
-    const value = e.target.options[e.target.selectedIndex].value;
-    tsSearch.trigger('setDataSources', [value]);
-  });
 
 // Show/hide a loader while iframe is loading
 function showLoader() {

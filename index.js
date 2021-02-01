@@ -12,10 +12,12 @@ init({
 // Instantiate SearchEmbed class
 const tsSearch = new SearchEmbed("#embed", {
   frameParams: {},
-  // Configure theme colours
-  theme: {
-    backgroundColor: 'rgba(41, 181, 232, 0.46)'
-  }
+  /*param-start-collapseDataSources*//*param-end-collapseDataSources*/
+  /*param-start-hideDataSources*//*param-end-hideDataSources*/
+  /*param-start-hideResults*//*param-end-hideResults*/
+  /*param-start-enableSearchAssist*//*param-end-enableSearchAssist*/
+  /*param-start-disabledActions*//*param-end-disabledActions*/
+  /*param-start-disabledActionReason*//*param-end-disabledActionReason*/
 });
 
 tsSearch
@@ -26,9 +28,11 @@ tsSearch
     console.log("message received from embedded view" + JSON.stringify(payload))
   )
   // Render the embedded search and pass in the data source id
-  .render([
-      /*param-start-datasource*/ "5b6cbcc7-8e7e-4028-82a8-556bdac5ab66" /*param-end-datasource*/
-  ]);
+  .render({
+      /*param-start-dataSources*//*param-end-dataSources*/
+      /*param-start-searchQuery*//*param-end-searchQuery*/
+      /*param-start-answerId*//*param-end-answerId*/
+  });
 
 // Show/hide a loader while iframe is loading
 function showLoader() {

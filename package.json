@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "ts-embed-sdk": "^0.0.6"
+    "ts-embed-sdk": "0.0.1-alpha.2"
   }
 }

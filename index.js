@@ -26,9 +26,9 @@ tsSearch
     console.log("message received from embedded view" + JSON.stringify(payload))
   )
   // Render the embedded search and pass in the data source id
-  .render([
-      /*param-start-datasource*/ "5b6cbcc7-8e7e-4028-82a8-556bdac5ab66" /*param-end-datasource*/
-  ]);
+  .render({
+      dataSources: [ /*param-start-datasource*//*param-end-datasource*/],
+  });
 
 // Show/hide a loader while iframe is loading
 function showLoader() {

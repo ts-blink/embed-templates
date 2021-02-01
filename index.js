@@ -1,5 +1,5 @@
 // Import ThoughtSpot SDK
-import { init, PinboardEmbed } from "ts-embed-sdk";
+import { init, AppEmbed } from "ts-embed-sdk";
 import "./styles.css";
 
 // Initialize embed configuration
@@ -10,7 +10,7 @@ init({
 });
 
 // Instantiate class for embedding a pinboard
-const embed = new PinboardEmbed("#embed", {
+const embed = new AppEmbed("#embed", {
   frameParams: {
     width: 1280,
     height: 720
@@ -21,10 +21,8 @@ embed
   // Register event listeners
   .on("init", showLoader)
   .on("load", hideLoader)
-  // Render pinboard with UUID
   .render({
-      /*param-start-pinboardId*/pinboardId: "976bb48e-b1e0-4621-a7da-51161cef4b29",/*param-end-pinboardId*/
-      runtimeFilters: [],
+      pageId: "home",
   });
 
 // Functions to show and hide a loader while iframe loads

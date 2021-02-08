@@ -14,7 +14,8 @@ const embed = new PinboardEmbed("#embed", {
   frameParams: {
     width: 1280,
     height: 720
-  }
+  },
+  /*param-start-modifyActions*//*param-end-modifyActions*/
 });
 
 embed
@@ -24,8 +25,8 @@ embed
   // Render a viz within a pinboard
   .render({
       /*param-start-pinboardId*/pinboardId: "976bb48e-b1e0-4621-a7da-51161cef4b29",/*param-end-pinboardId*/
-    /*param-start-answerId*/vizId: "b53ed4b9-7a95-4a16-9f6b-1c7f53d9777f",/*param-end-answerId*/
-      runtimeFilters: [],
+      /*param-start-vizId*/vizId: "b53ed4b9-7a95-4a16-9f6b-1c7f53d9777f",/*param-end-vizId*/
+      /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
   });
 
 // Functions to show/hide a loader while the iframe loads

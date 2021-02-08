@@ -14,7 +14,8 @@ const embed = new PinboardEmbed("#embed", {
   frameParams: {
     width: 1280,
     height: 720
-  }
+  },
+  /*param-start-modifyActions*//*param-end-modifyActions*/
 });
 
 embed
@@ -24,7 +25,7 @@ embed
   // Render pinboard with UUID
   .render({
       /*param-start-pinboardId*/pinboardId: "976bb48e-b1e0-4621-a7da-51161cef4b29",/*param-end-pinboardId*/
-      runtimeFilters: [],
+      /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
   });
 
 // Functions to show and hide a loader while iframe loads

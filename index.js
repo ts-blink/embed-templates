@@ -14,7 +14,7 @@ const embed = new AppEmbed("#embed", {
   frameParams: {
     width: 1280,
     height: 720
-  }
+  },
 });
 
 embed
@@ -22,7 +22,8 @@ embed
   .on("init", showLoader)
   .on("load", hideLoader)
   .render({
-      pageId: "home",
+      /*param-start-pageId*/pageId: "home",/*param-end-pageId*/
+      /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
   });
 
 // Functions to show and hide a loader while iframe loads

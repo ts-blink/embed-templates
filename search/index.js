@@ -11,13 +11,13 @@ init({
 
 // Instantiate SearchEmbed class
 const tsSearch = new SearchEmbed("#embed", {
-  frameParams: {},
-  /*param-start-collapseDataSources*//*param-end-collapseDataSources*/
-  /*param-start-hideDataSources*//*param-end-hideDataSources*/
-  /*param-start-hideResults*//*param-end-hideResults*/
-  /*param-start-enableSearchAssist*//*param-end-enableSearchAssist*/
-  /*param-start-modifyActions*//*param-end-modifyActions*/
-  /*param-start-disabledActions*//*param-end-disabledActions*/
+    frameParams: {},
+    /*param-start-collapseDataSources*//*param-end-collapseDataSources*/
+    /*param-start-hideDataSources*//*param-end-hideDataSources*/
+    /*param-start-hideResults*//*param-end-hideResults*/
+    /*param-start-enableSearchAssist*//*param-end-enableSearchAssist*/
+    /*param-start-modifyActions*//*param-end-modifyActions*/
+    /*param-start-disabledActions*//*param-end-disabledActions*/
 });
 
 tsSearch
@@ -29,7 +29,7 @@ tsSearch
   )
   // Render the embedded search and pass in the data source id
   .render({
-      /*param-start-dataSources*/dataSources: [ /*param-start-datasource*//*param-end-datasource*/ ],/*param-end-dataSources*/
+      /*param-start-dataSources*//*param-end-dataSources*/
       /*param-start-searchQuery*//*param-end-searchQuery*/
       /*param-start-answerId*//*param-end-answerId*/
   });

@@ -1,7 +1,7 @@
 :root {
   --gutter: 0;
   --darkblue: #2359B6;
-  --bgcolor: #e5e5e5;
+  --bgcolor: #EAEDF2;
   --opacitywhite: rgba(255,255,255,.25);
   --listcolor: #ABC7F9;
   --white: #fff;
@@ -26,7 +26,7 @@ body {
 
 @font-face {
   font-family: 'Plain';
-  src: url('../fonts/Plain-Medium.woff2') format('woff2'), url('../fonts/Plain-Medium.woff') format('woff');
+  src: url('https://github.com/ts-blink/embed-templates/blob/master/fonts/Plain-Medium.woff2?raw=true') format('woff2'), url('https://github.com/ts-blink/embed-templates/blob/master/fonts/Plain-Medium.woff?raw=true') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -34,7 +34,7 @@ body {
 
 @font-face {
   font-family: 'Plain';
-  src: url('../fonts/Plain-Light.woff2') format('woff2'), url('../fonts/Plain-Light.woff') format('woff');
+  src: url('https://github.com/ts-blink/embed-templates/blob/master/fonts/Plain-Light.woff2?raw=true') format('woff2'), url('https://github.com/ts-blink/embed-templates/blob/master/fonts/Plain-Light.woff?raw=true') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -62,7 +62,7 @@ a {
 }
 
 .container {
-  padding: 12px 36px;
+  padding: 12px 24px;
 }
 
 /*active class without background*/

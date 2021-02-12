@@ -1,18 +1,3 @@
-html,
-body {
-  margin: 0;
-  background: #29b5e8;
-  color: white;
-  height: 100%;
-}
-
-.wrapper {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 :root {
   --gutter: 0;
   --darkblue: #2359B6;
@@ -22,6 +7,21 @@ body {
   --white: #fff;
   --black: #000;
   --lightcream: #F6F8FA;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--bgcolor);
+  color: white;
+  height: 100%;
+}
+
+.wrapper {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 @font-face {
@@ -43,7 +43,7 @@ body {
 body {
   margin: var(--gutter);
   padding: var(--gutter);
-  font-family: 'Plain';
+  font-family: 'Plain', 'Arial', 'Helvetica';
   font-size: 14px;
   color: var(--white);
   background: var(--bgcolor);
@@ -186,7 +186,7 @@ nav {
 }
 
 .search-container {
-  padding: 20px;
+  padding: 24px;
   color: #4a4a4d;
   position: relative;
 }

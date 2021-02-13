@@ -1,7 +1,18 @@
+:root {
+  --gutter: 0;
+  --darkblue: #2359B6;
+  --bgcolor: #EAEDF2;
+  --opacitywhite: rgba(255,255,255,.25);
+  --listcolor: #ABC7F9;
+  --white: #fff;
+  --black: #000;
+  --lightcream: #F6F8FA;
+}
+
 html,
 body {
   margin: 0;
-  background: #29b5e8;
+  background: var(--bgcolor);
   color: white;
   height: 100%;
 }
@@ -11,17 +22,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-:root {
-  --gutter: 0;
-  --darkblue: #2359B6;
-  --bgcolor: #e5e5e5;
-  --opacitywhite: rgba(255,255,255,.25);
-  --listcolor: #ABC7F9;
-  --white: #fff;
-  --black: #000;
-  --lightcream: #F6F8FA;
 }
 
 @font-face {
@@ -43,7 +43,7 @@ body {
 body {
   margin: var(--gutter);
   padding: var(--gutter);
-  font-family: 'Plain';
+  font-family: 'Plain', 'Arial', 'Helvetica';
   font-size: 14px;
   color: var(--white);
   background: var(--bgcolor);
@@ -62,7 +62,7 @@ a {
 }
 
 .container {
-  padding: 12px 36px;
+  padding: 12px 24px;
 }
 
 /*active class without background*/
@@ -186,7 +186,7 @@ nav {
 }
 
 .search-container {
-  padding: 20px;
+  padding: 24px;
   color: #4a4a4d;
   position: relative;
 }

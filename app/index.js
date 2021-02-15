@@ -15,6 +15,7 @@ const embed = new AppEmbed("#embed", {
     width: 1280,
     height: 720
   },
+  /*param-start-hideNavBar*//*param-end-hideNavBar*/
 });
 
 embed

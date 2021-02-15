@@ -1,5 +1,5 @@
 // Import ThoughtSpot SDK
-import { init, PinboardEmbed } from "ts-embed-sdk";
+import { init, PinboardEmbed } from "@thoughtspot/embed-sdk";
 import "./styles.css";
 
 // Initialize embed configuration

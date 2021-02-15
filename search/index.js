@@ -1,6 +1,6 @@
 // Import packages
 import "./styles.css";
-import { init, SearchEmbed } from "ts-embed-sdk";
+import { init, SearchEmbed } from "@thoughtspot/embed-sdk";
 
 // Write Javascript code!
 init({

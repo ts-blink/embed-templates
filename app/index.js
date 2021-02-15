@@ -1,5 +1,5 @@
 // Import ThoughtSpot SDK
-import { init, AppEmbed } from "ts-embed-sdk";
+import { init, AppEmbed } from "@thoughtspot/embed-sdk";
 import "./styles.css";
 
 // Initialize embed configuration

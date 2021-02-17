@@ -18,21 +18,36 @@ const embed = new PinboardEmbed("#embed", {
   /*param-start-modifyActions*//*param-end-modifyActions*/
 });
 
-embed
-  // Register event listeners
-  .on("init", showLoader)
-  .on("load", hideLoader)
-  // Render pinboard with UUID
-  .render({
-      /*param-start-pinboardId*//*param-end-pinboardId*/
-      /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
-  });
+try {
+  hideNoDataImage();
+  embed
+    // Register event listeners
+    .on("init", showLoader)
+    .on("load", hideLoader)
+    // Render pinboard with UUID
+    .render({
+        /*param-start-pinboardId*//*param-end-pinboardId*/
+        /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
+    });
+} catch(error) {
+  showNoDataImage();
+  hideLoader();
+}
 
 // Functions to show and hide a loader while iframe loads
 function showLoader() {
   document.getElementById("loader").style.display = "block";
 }
+
 function hideLoader() {
   document.getElementById("loader").style.display = "none";
 }
 
+// Functions to show or hide No data images
+
+function showNoDataImage() {
+  document.getElementById("no-data").style.display = "block";
+}
+function hideNoDataImage() {
+  document.getElementById("no-data").style.display = "none";
+}

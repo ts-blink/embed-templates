@@ -222,7 +222,7 @@ nav {
 
 .search-container .search-embed {
   width: 100%;
-  height: 500px;
+  height: calc(100vh - 115px);
   position: relative;
 }
 
@@ -307,6 +307,14 @@ nav {
   transform-origin: 0.1em 5.1em;
   -webkit-animation: load2 2s infinite ease;
   animation: load2 2s infinite ease;
+}
+
+.no-data {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @-webkit-keyframes load2 {

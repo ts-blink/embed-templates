@@ -222,7 +222,7 @@ nav {
 
 .search-container .search-embed {
   width: 100%;
-  height: 500px;
+  height: calc(100vh - 115px);
   position: relative;
 }
 

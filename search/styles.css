@@ -309,6 +309,14 @@ nav {
   animation: load2 2s infinite ease;
 }
 
+.no-data {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @-webkit-keyframes load2 {
   0% {
     -webkit-transform: rotate(0deg);

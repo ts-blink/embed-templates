@@ -1,7 +1,7 @@
 // Import ThoughtSpot SDK
 import {
   init,
-  PinboardVizEmbed,
+  PinboardEmbed,
   Action,
   EventType,
   AuthType
@@ -16,7 +16,7 @@ init({
 });
 
 // Instantiate class for embedding a pinboard
-const embed = new PinboardVizEmbed("#embed", {
+const embed = new PinboardEmbed("#embed", {
   frameParams: {
     width: 1280,
     height: 720

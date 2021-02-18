@@ -1,12 +1,18 @@
 // Import packages
 import "./styles.css";
-import { init, SearchEmbed } from "@thoughtspot/embed-sdk";
+import {
+  init,
+  SearchEmbed,
+  Action,
+  EventType,
+  AuthType
+} from "@thoughtspot/embed-sdk";
 
 // Write Javascript code!
 init({
   thoughtSpotHost:
     /*param-start-hosturl*/ "https://10.87.90.166" /*param-end-hosturl*/,
-  authType: "SSO"
+  authType: AuthType.None
 });
 
 // Instantiate SearchEmbed class

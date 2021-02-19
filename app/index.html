@@ -62,4 +62,10 @@
       </div>
     </div>
   </div>
+  <script>
+      window.addEventListener('beforeunload', function (e) {
+          const el = document.getElementById('embed');
+          el.parentNode.removeChild(el);
+      });
+  </scipt>
 </div>

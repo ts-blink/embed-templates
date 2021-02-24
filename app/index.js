@@ -1,12 +1,18 @@
 // Import ThoughtSpot SDK
-import { init, AppEmbed } from "@thoughtspot/embed-sdk";
+import {
+  init,
+  AppEmbed,
+  Action,
+  EventType,
+  AuthType
+} from "@thoughtspot/embed-sdk";
 import "./styles.css";
 
 // Initialize embed configuration
 init({
   thoughtSpotHost:
     /*param-start-hosturl*/ "https://10.87.90.166" /*param-end-hosturl*/,
-  authType: "SSO"
+  authType: AuthType.None
 });
 
 // Instantiate class for embedding a pinboard

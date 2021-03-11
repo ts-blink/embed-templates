@@ -17,10 +17,7 @@ init({
 
 // Instantiate class to embed a visualization
 const embed = new PinboardEmbed("#embed", {
-  frameParams: {
-    width: 1280,
-    height: 720
-  },
+  frameParams: {},
   /*param-start-modifyActions*//*param-end-modifyActions*/
 });
 

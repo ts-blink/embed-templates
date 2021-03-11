@@ -30,6 +30,7 @@ tsSearch
   // Register event handlers
   .on("init", showLoader)
   .on("load", hideLoader)
+  /*param-start-customActionHandle*//*param-end-customActionHandle*/
   .on("answerPageLoading", payload =>
     console.log("message received from embedded view" + JSON.stringify(payload))
   )

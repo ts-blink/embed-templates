@@ -40,3 +40,13 @@
     runtimeFilters: [],
 </script>
 
+<!-- customActionHandle -->
+<script type="text/template" id="customActionHandle">
+  .on(EventType.CustomAction, payload => {
+      const data = payload.data;
+      if (data.id === 'insert Custom Action ID here') {
+          console.log('Custom Action event:', data.columnsAndData);
+      }
+  })
+</script>
+

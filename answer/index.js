@@ -5,7 +5,7 @@ import {
   Action,
   EventType,
   AuthType
-} from "@thoughtspot/embed-sdk";
+} from "@thoughtspot/visual-embed-sdk";
 import "./styles.css";
 
 // Initialize embed configuration

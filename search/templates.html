@@ -42,7 +42,7 @@
 
 <!-- customActionHandle -->
 <script type="text/template" id="customActionHandle">
-  .on(EventType.CustomAction, payload => {
+  .on(EmbedEvent.CustomAction, payload => {
       const data = payload.data;
       if (data.id === 'insert Custom Action ID here') {
           console.log('Custom Action event:', data.columnsAndData);

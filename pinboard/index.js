@@ -3,7 +3,7 @@ import {
   init,
   PinboardEmbed,
   Action,
-  EventType,
+  EmbedEvent,
   AuthType
 } from "@thoughtspot/visual-embed-sdk";
 import "./styles.css";

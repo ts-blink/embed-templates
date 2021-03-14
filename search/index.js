@@ -6,7 +6,7 @@ import {
   Action,
   EventType,
   AuthType
-} from "@thoughtspot/embed-sdk";
+} from "@thoughtspot/visual-embed-sdk";
 
 // Write Javascript code!
 init({

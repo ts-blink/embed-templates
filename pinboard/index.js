@@ -23,18 +23,16 @@ const embed = new PinboardEmbed("#embed", {
     /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
 });
 
-try {
-  hideNoDataImage();
-  embed
+embed
     // Register event listeners
     .on("init", showLoader)
     .on("load", hideLoader)
-    // Render pinboard with UUID
+    .on(EmbedEvent.Error, () => {
+        showNoDataImage();
+        hideLoader();
+    })
+    // Render pinboard
     .render();
-} catch(error) {
-  showNoDataImage();
-  hideLoader();
-}
 
 // Functions to show and hide a loader while iframe loads
 function showLoader() {
@@ -53,3 +51,4 @@ function showNoDataImage() {
 function hideNoDataImage() {
   document.getElementById("no-data").style.display = "none";
 }
+hideNoDataImage();

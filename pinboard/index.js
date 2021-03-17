@@ -3,9 +3,9 @@ import {
   init,
   PinboardEmbed,
   Action,
-  EventType,
+  EmbedEvent,
   AuthType
-} from "@thoughtspot/embed-sdk";
+} from "@thoughtspot/visual-embed-sdk";
 import "./styles.css";
 
 // Initialize embed configuration
@@ -17,10 +17,7 @@ init({
 
 // Instantiate class for embedding a pinboard
 const embed = new PinboardEmbed("#embed", {
-  frameParams: {
-    width: 1280,
-    height: 720
-  },
+  frameParams: {},
   /*param-start-modifyActions*//*param-end-modifyActions*/
 });
 

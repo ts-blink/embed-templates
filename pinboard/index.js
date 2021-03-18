@@ -17,8 +17,10 @@ init({
 
 // Instantiate class for embedding a pinboard
 const embed = new PinboardEmbed("#embed", {
-  frameParams: {},
-  /*param-start-modifyActions*//*param-end-modifyActions*/
+    frameParams: {},
+    /*param-start-modifyActions*//*param-end-modifyActions*/
+    /*param-start-pinboardId*//*param-end-pinboardId*/
+    /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
 });
 
 try {
@@ -28,10 +30,7 @@ try {
     .on("init", showLoader)
     .on("load", hideLoader)
     // Render pinboard with UUID
-    .render({
-        /*param-start-pinboardId*//*param-end-pinboardId*/
-        /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
-    });
+    .render();
 } catch(error) {
   showNoDataImage();
   hideLoader();

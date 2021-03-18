@@ -24,6 +24,9 @@ const tsSearch = new SearchEmbed("#embed", {
     /*param-start-enableSearchAssist*//*param-end-enableSearchAssist*/
     /*param-start-modifyActions*//*param-end-modifyActions*/
     /*param-start-disabledActions*//*param-end-disabledActions*/
+    /*param-start-dataSources*//*param-end-dataSources*/
+    /*param-start-searchQuery*//*param-end-searchQuery*/
+    /*param-start-answerId*//*param-end-answerId*/
 });
 
 tsSearch
@@ -35,11 +38,7 @@ tsSearch
     console.log("message received from embedded view" + JSON.stringify(payload))
   )
   // Render the embedded search and pass in the data source id
-  .render({
-      /*param-start-dataSources*//*param-end-dataSources*/
-      /*param-start-searchQuery*//*param-end-searchQuery*/
-      /*param-start-answerId*//*param-end-answerId*/
-  });
+  .render();
 
 // Show/hide a loader while iframe is loading
 function showLoader() {

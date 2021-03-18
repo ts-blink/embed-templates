@@ -17,8 +17,11 @@ init({
 
 // Instantiate class to embed a visualization
 const embed = new PinboardEmbed("#embed", {
-  frameParams: {},
-  /*param-start-modifyActions*//*param-end-modifyActions*/
+    frameParams: {},
+    /*param-start-modifyActions*//*param-end-modifyActions*/
+    /*param-start-pinboardId*//*param-end-pinboardId*/
+    /*param-start-vizId*//*param-end-vizId*/
+    /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
 });
 
 try {
@@ -28,11 +31,7 @@ try {
     .on("init", showLoader)
     .on("load", hideLoader)
     // Render a viz within a pinboard
-    .render({
-        /*param-start-pinboardId*//*param-end-pinboardId*/
-        /*param-start-vizId*//*param-end-vizId*/
-        /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
-    });
+    .render();
 } catch(error) {
   showNoDataImage();
   hideLoader();

@@ -309,8 +309,16 @@ nav {
   animation: load2 2s infinite ease;
 }
 
-.no-data {
-  display: none;
+#no-data {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bgcolor);
+}
+
+#no-data img {
   position: absolute;
   top: 50%;
   left: 50%;

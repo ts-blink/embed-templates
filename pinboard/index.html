@@ -68,7 +68,10 @@
   <script>
       window.addEventListener('beforeunload', function (e) {
           const el = document.getElementById('embed');
-          el.parentNode.removeChild(el);
+          if (el && el.parentNode) {
+              el.parentNode.removeChild(el);
+          }
       });
   </script>
+
 </div>

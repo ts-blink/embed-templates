@@ -17,15 +17,15 @@
 </script>
 <!-- navigateToUrl-->
 <script type="text/template" id="navigateToUrl">
+     // eg path:"pinboard/[pinboardId]" or "insights/results"
      path: "",
-     // eg pinboard/[pinboardId] or insights/results
 </script>
 <!-- runtimeFilters -->
 <script type="text/template" id="runtimeFilters">
      runtimeFilters: [{
-          columnName: 'color',
+          columnName: 'columnName1', // eg: color
           operator: RuntimeFilterOp.EQ,
-          values: [ 'red' ]
-          }],
+          values: ['value1'] // eg: red
+     }],
 </script>
 

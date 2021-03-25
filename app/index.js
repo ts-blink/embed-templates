@@ -19,6 +19,7 @@ init({
 const embed = new AppEmbed("#embed", {
     frameParams: {},
     /*param-start-showNavBar*//*param-end-showNavBar*/
+    /*param-start-navigateToUrl*//*param-end-navigateToUrl*/
     /*param-start-pageId*/pageId: "home",/*param-end-pageId*/
     /*param-start-modifyActions*//*param-end-modifyActions*/
     /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
@@ -26,8 +27,8 @@ const embed = new AppEmbed("#embed", {
 
 embed
   // Register event listeners
-  .on("init", showLoader)
-  .on("load", hideLoader)
+  .on(EmbedEvent.Init, showLoader)
+  .on(EmbedEvent.Load, hideLoader)
   .render();
 
 // Functions to show and hide a loader while iframe loads

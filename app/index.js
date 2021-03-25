@@ -3,6 +3,7 @@ import {
   init,
   AppEmbed,
   Action,
+  RuntimeFilterOp,
   EmbedEvent,
   AuthType
 } from "@thoughtspot/visual-embed-sdk";

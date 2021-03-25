@@ -3,6 +3,7 @@ import {
   init,
   PinboardEmbed,
   Action,
+  RuntimeFilterOp,
   EmbedEvent,
   AuthType
 } from "@thoughtspot/visual-embed-sdk";

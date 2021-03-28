@@ -4,6 +4,7 @@ import {
   init,
   SearchEmbed,
   Action,
+  RuntimeFilterOp,
   EmbedEvent,
   AuthType
 } from "@thoughtspot/visual-embed-sdk";

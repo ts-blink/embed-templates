@@ -4,6 +4,7 @@ import {
   init,
   SearchEmbed,
   Action,
+  RuntimeFilterOp,
   EmbedEvent,
   AuthType
 } from "@thoughtspot/visual-embed-sdk";
@@ -31,8 +32,8 @@ const tsSearch = new SearchEmbed("#embed", {
 
 tsSearch
   // Register event handlers
-  .on("init", showLoader)
-  .on("load", hideLoader)
+  .on(EmbedEvent.Init, showLoader)
+  .on(EmbedEvent.Load, hideLoader)
   /*param-start-customActionHandle*//*param-end-customActionHandle*/
   .on("answerPageLoading", payload =>
     console.log("message received from embedded view" + JSON.stringify(payload))

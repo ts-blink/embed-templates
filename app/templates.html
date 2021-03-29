@@ -15,8 +15,18 @@
 <script type="text/template" id="showNavBar">
      showPrimaryNavbar: true,
 </script>
+<!-- navigateToUrl-->
+<script type="text/template" id="navigateToUrl">
+     // eg path:"pinboard/[pinboardId]"
+     // or "insights/results"
+     path: "",
+</script>
 <!-- runtimeFilters -->
 <script type="text/template" id="runtimeFilters">
-     runtimeFilters: [],
+     runtimeFilters: [{
+          columnName: 'columnName1', // eg: color
+          operator: RuntimeFilterOp.EQ,
+          values: ['value1'] // eg: red
+     }],
 </script>
 

@@ -3,6 +3,7 @@ import {
   init,
   PinboardEmbed,
   Action,
+  RuntimeFilterOp,
   EmbedEvent,
   AuthType
 } from "@thoughtspot/visual-embed-sdk";
@@ -27,8 +28,8 @@ hideNoDataImage();
 
 embed
     // Register event listeners
-    .on("init", showLoader)
-    .on("load", hideLoader)
+    .on(EmbedEvent.Init, showLoader)
+    .on(EmbedEvent.Load, hideLoader)
     .on(EmbedEvent.Error, () => {
         showNoDataImage();
         hideLoader();

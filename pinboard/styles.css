@@ -24,26 +24,12 @@ body {
   height: 100%;
 }
 
-@font-face {
-  font-family: 'Plain';
-  src: url('../fonts/Plain-Medium.woff2') format('woff2'), url('../fonts/Plain-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: 'Plain';
-  src: url('../fonts/Plain-Light.woff2') format('woff2'), url('../fonts/Plain-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
 
 body {
   margin: var(--gutter);
   padding: var(--gutter);
-  font-family: 'Plain', 'Arial', 'Helvetica';
+  font-family: 'Arial', 'Helvetica';
   font-size: 14px;
   color: var(--white);
   background: var(--bgcolor);

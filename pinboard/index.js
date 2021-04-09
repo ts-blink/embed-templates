@@ -30,6 +30,7 @@ embed
     // Register event listeners
     .on(EmbedEvent.Init, showLoader)
     .on(EmbedEvent.Load, hideLoader)
+    /*param-start-customActionHandle*//*param-end-customActionHandle*/
     .on(EmbedEvent.Error, () => {
         showNoDataImage();
         hideLoader();

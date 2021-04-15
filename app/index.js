@@ -5,7 +5,8 @@ import {
   Action,
   RuntimeFilterOp,
   EmbedEvent,
-  AuthType
+  AuthType,
+  Page
 } from "@thoughtspot/visual-embed-sdk";
 import "./styles.css";
 

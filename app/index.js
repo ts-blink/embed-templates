@@ -17,7 +17,7 @@ init({
   authType: AuthType.None
 });
 
-// Instantiate class for embedding a pinboard
+// Instantiate class for embedding the full application
 const embed = new AppEmbed("#embed", {
     frameParams: {},
     /*param-start-showNavBar*//*param-end-showNavBar*/

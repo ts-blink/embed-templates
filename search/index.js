@@ -17,7 +17,7 @@ init({
 });
 
 // Instantiate SearchEmbed class
-const tsSearch = new SearchEmbed("#embed", {
+const embed = new SearchEmbed("#embed", {
     frameParams: {},
     /*param-start-collapseDataSources*//*param-end-collapseDataSources*/
     /*param-start-hideDataSources*//*param-end-hideDataSources*/
@@ -30,7 +30,7 @@ const tsSearch = new SearchEmbed("#embed", {
     /*param-start-answerId*//*param-end-answerId*/
 });
 
-tsSearch
+embed
   // Register event handlers
   .on(EmbedEvent.Init, showLoader)
   .on(EmbedEvent.Load, hideLoader)

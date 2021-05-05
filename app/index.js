@@ -22,7 +22,7 @@ const embed = new AppEmbed("#embed", {
     frameParams: {},
     /*param-start-showNavBar*//*param-end-showNavBar*/
     /*param-start-navigateToUrl*//*param-end-navigateToUrl*/
-    /*param-start-pageId*/pageId: "home",/*param-end-pageId*/
+    /*param-start-pageId*/pageId: Page.Home,/*param-end-pageId*/
     /*param-start-modifyActions*//*param-end-modifyActions*/
     /*param-start-runtimeFilters*//*param-end-runtimeFilters*/
 });

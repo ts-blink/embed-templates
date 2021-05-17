@@ -27,6 +27,8 @@ const embed = new SearchEmbed("#embed", {
     /*param-start-disabledActions*//*param-end-disabledActions*/
     /*param-start-dataSources*//*param-end-dataSources*/
     /*param-start-searchQuery*//*param-end-searchQuery*/
+    /*param-start-searchQueryTokens*//*param-end-searchQueryTokens*/
+    /*param-start-executeSearch*//*param-end-executeSearch*/
     /*param-start-answerId*//*param-end-answerId*/
 });
 

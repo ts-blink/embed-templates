@@ -21,6 +21,7 @@ init({
 const embed = new AppEmbed("#embed", {
     frameParams: {},
     /*param-start-showNavBar*//*param-end-showNavBar*/
+    /*param-start-disableProfileAndHelp*//*param-end-disableProfileAndHelp*/
     /*param-start-navigateToUrl*//*param-end-navigateToUrl*/
     /*param-start-pageId*/pageId: Page.Home,/*param-end-pageId*/
     /*param-start-modifyActions*//*param-end-modifyActions*/

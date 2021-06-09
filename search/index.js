@@ -21,6 +21,7 @@ const embed = new SearchEmbed("#embed", {
     frameParams: {},
     /*param-start-collapseDataSources*//*param-end-collapseDataSources*/
     /*param-start-hideDataSources*//*param-end-hideDataSources*/
+    /*param-start-expandAllDataSource*//*param-end-expandAllDataSource*/
     /*param-start-hideResults*//*param-end-hideResults*/
     /*param-start-enableSearchAssist*//*param-end-enableSearchAssist*/
     /*param-start-modifyActions*//*param-end-modifyActions*/
